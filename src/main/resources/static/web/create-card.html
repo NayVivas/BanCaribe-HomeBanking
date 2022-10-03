@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanCaribe - accounts</title>
+    <link rel="shortcut icon" type="image/png" href="/img/logo.png">
+    <link rel="stylesheet" href="/assets/menu.css">
+    <link rel="stylesheet" href="/assets/accounts.css">
+    <link rel="stylesheet" href="/assets/card.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app2" v-cloak>
+        <nav class="navbar-expand-lg">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="navbar-brand d-flex align-items-center justify-content-center">
+                        <img src="/img/logo.png" alt="Logo" width="50" height="44"
+                            class="d-inline-block align-text-top">
+                        <h2>BanCaribe</h2>
+                    </div>
+                </div>
+                <div class="navbar-collapse nav-bar" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mi Perfil
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><img src="/img/3d-render-people-profile-icon-2231691.png" alt="" class="img-perfil">
+                                </li>
+                                <li><a class="dropdown-item">{{clients.firstName + " " + clients.lastName}}</a></li>
+                                <li><a class="dropdown-item" href="#">Editar información</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#" @click="logout">Cerrar sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="anchor">
+                        <div class="menu">
+                            <li class="menu">
+                                <a href="/web/inicioAll.html" class="btn">
+                                    Inicio
+                                </a>
+                                <a href="/web/accounts.html" class="btn">
+                                    Cuentas
+                                </a>
+                                <a href="/web/card.html" class="btn">
+                                    Tarjetas
+                                </a>
+                                <a href="/web/transfers.html" class="btn">
+                                    Transferencias
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Create Cards Debito-->
+        <section class="d-flex container-create-card">
+        <main data-aos="fade-up">
+            <div class="seccion-resumen">
+                <div class="resumen-main">
+                    <div class="d-flex justify-content-center">
+                        <input type="radio" name="card" id="debito" v-model="checkType" value="DEBIT">
+                        <label for="debito">
+                            <h4>Solicitar Tarjeta de Debito</h4>
+                        </label>
+                        <button class="btn-btn" type="submit" @click="createCard()">Solicitar</button>
+                    </div>
+                    <div class="resumen-main-body">
+                        <div>
+                            <input type="radio" name="color" id="gold" v-model="checkColor" value="GOLD">
+                            <label for="gold">
+                                Gold
+                            </label>
+                        </div>
+                        <div class="card-container d-flex flex-wrap">
+                            <div class="wrap tarjetasGold">
+                                <div class="tarjeta-wrap">
+                                    <div class="tarjeta td1">
+                                        <div class="adelante card1">
+                                            <img src="/img/logo.png" alt="" class="cardImgTD1" />
+                                            <span class="titleTD1">BanCaribe</span>
+                                        </div>
+                                        <div class="containerHolo">
+                                            <h2 class="embossGold holoName">Titanium</h2>
+                                        </div>
+                                        <div class="container-numberD">
+                                            <img class="chip" src="/img/chipGold.png" />
+                                            <h5 class="embossGold number mx-3">2424-0902-2205-6667</h5>
+                                        </div>
+                                        <div class="container-textD">
+                                            <h6 class="embossGold mx-3">
+                                                01/22 - 01/26
+                                            </h6>
+                                            <h6 class="embossGold mx-4">Naylu K Vivas C</h6>
+                                        </div>
+                                        <div class="atras td1">
+                                            <div class="barra"></div>
+                                            <p class="cvv">242</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="titanium" v-model="checkColor" value="TITANIUM">
+                            <label for="titanium">
+                                Titanium
+                            </label>
+                        </div>
+                        <div class="card-container wrap tarjetasGold">
+                            <button class="pushCvv1">CVV</button>
+                            <div>
+                                <div class="tarjeta-wrap">
+                                    <div class="tarjeta td2">
+                                        <div class="adelante card1">
+                                            <img src="/img/logo.png" alt="" class="cardImgTD3" />
+                                            <span class="titleTD3">BanCaribe</span>
+                                        </div>
+                                        <div class="containerHolo">
+                                            <h2 class="embossGold holoName">Gold</h2>
+                                        </div>
+                                        <div class="container-numberD">
+                                            <img class="chip" src="/img/chipGold.png" />
+                                            <h5 class="embossGold number mx-3">2424-0902-2205-6667</h5>
+                                        </div>
+                                        <div class="container-textD">
+                                            <h6 class="embossGold mx-3">
+                                                01/22-01/26
+                                            </h6>
+                                            <h6 class="embossGold mx-4">Naylu K Vivas C</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="silver" v-model="checkColor" value="SILVER">
+                            <label for="silver">
+                                Silver
+                            </label>
+                        </div>
+                        <div class="card-container wrap">
+                            <div>
+                                <div class="tarjeta-wrap">
+                                    <div class="tarjeta td3">
+                                        <div class="adelante card1">
+                                            <img src="/img/logo.png" alt="" class="cardImgTD2" />
+                                            <span class="titleTD2">BanCaribe</span>
+                                        </div>
+                                        <div class="containerHolo">
+                                            <h2 class="embossGold holoName text-white">Silver</h2>
+                                        </div>
+                                        <div class="container-numberD">
+                                            <img class="chip" src="/img/chipGold.png" />
+                                            <h5 class="embossGold number mx-3 text-white">
+                                                2424-0902-2205-6667
+                                            </h5>
+                                        </div>
+                                        <div class="container-textD">
+                                            <h6 class="embossGold mx-3 text-white">
+                                                01/22-01/26
+                                            </h6>
+                                            <h6 class="embossGold mx-4 text-white">
+                                                Naylu K Vivas C
+                                            </h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
+
+        <!-- Create Cards Credito-->
+        <main data-aos="fade-up">
+            <div class="seccion-cards">
+                <div class="resumen-main">
+                    <div class="d-flex justify-content-center">
+                        <input type="radio" name="card" id="credito" v-model="checkType" value="CREDIT">
+                        <label for="credito">
+                            <h4>Solicitar Tarjeta de Credito</h4>
+                        </label>
+                        <button class="btn-btn" type="submit" @click="createCard()">Solicitar</button>
+                    </div>
+                    <div class="resumen-main-body">
+                        <div>
+                            <input type="radio" name="color" id="gold" v-model="checkColor" value="GOLD">
+                            <label for="gold">
+                                Gold
+                            </label>
+                        </div>
+                        <div class="card-container d-flex flex-wrap">
+                            <div class="wrap tarjetasGold">
+                                <div class="wrap tarjetasGold">
+                                    <div class="tarjeta-wrap">
+                                        <div class="tarjeta tarjetaTitanium">
+                                            <div class="adelante card1">
+                                                <img src="/img/logo.png" alt="" class="cardImgC" />
+                                                <span class="titleC emboss">BanCaribe</span>
+                                            </div>
+                                            <div class="containerHolo">
+                                                <h2 class="holoName emboss">Titanium</h2>
+                                            </div>
+                                            <div class="container-numberD">
+                                                <img class="chip" src="/img/chipSilver.png" />
+                                                <h5 class="embossGold emboss number mx-3">2424-0902-2205-6667</h5>
+                                            </div>
+                                            <div class="container-textD">
+                                                <h6 class="mx-3 emboss">
+                                                    01/22-01/26
+                                                </h6>
+                                                <h6 class="mx-4 emboss">Naylu K Vivas Casanova</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="titanium" v-model="checkColor" value="TITANIUM">
+                            <label for="titanium">
+                                Titanium
+                            </label>
+                        </div>
+                        <div class="card-container wrap tarjetasGold">
+                            <div class="tarjeta-wrap">
+                                <div class="tarjeta tarjetaGold">
+                                    <div class="adelante card1">
+                                        <img src="/img/logo.png" alt="" class="cardImgC" />
+                                        <span class="titleC emboss">BanCaribe</span>
+                                    </div>
+                                    <div class="containerHolo">
+                                        <h2 class="holoName emboss">Gold</h2>
+                                    </div>
+                                    <div class="container-numberD">
+                                        <img class="chip" src="/img/chipSilver.png" />
+                                        <h5 class="embossGold emboss number mx-3">2424-0902-2205-6667</h5>
+                                    </div>
+                                    <div class="container-textD">
+                                        <h6 class="mx-3 emboss">
+                                            01/22-01/26
+                                        </h6>
+                                        <h6 class="mx-4 emboss">Naylu K Vivas C</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <input type="radio" name="color" id="silver" v-model="checkColor" value="SILVER">
+                            <label for="silver">
+                                Silver
+                            </label>
+                        </div>
+                        <div class="card-container wrap">
+                            <div class="tarjeta-wrap">
+                                <div class="tarjeta tarjetaSilver">
+                                    <div class="adelante card1">
+                                        <img src="/img/logo.png" alt="" class="cardImgC">
+                                        <span class="titleC emboss">BanCaribe</span>
+                                    </div>
+                                    <div class="containerHolo">
+                                        <h2 class="holoName emboss">Silver</h2>
+                                    </div>
+                                    <div class="container-numberD">
+                                        <img class="chip" src="/img/chipSilver.png">
+                                        <h5 class="embossGold emboss number mx-3">2424-0902-2205-6667</h5>
+                                    </div>
+                                    <div class="container-textD">
+                                        <h6 class="mx-3 emboss">01/22-01/26</h6>
+                                        <h6 class="mx-4 emboss">Naylu K Vivas Casanova</h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        </main>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+    <script src="/scripts/create-card.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </body>
+    
+    </html>

@@ -1,0 +1,206 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+form {
+    width: 50vw;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(6, 115, 240, 0.623) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.container-form {
+    margin-top: 5vw;
+    margin-left: 35vw;
+}
+
+label {
+  display: inline-block;
+  width: 40vw;
+  margin-left: 10vw;
+}
+
+input {
+  margin-left: 10vw !important;
+  width: 30vw;
+}
+
+select {
+  width: 15vw;
+}
+
+.btn-primary {
+   background: linear-gradient(#002D69, #002D69);
+   border: none !important;
+}
+
+.logoBanCaribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45vw;
+    width: 30rem;
+}
+
+.tituloBanCaribe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20vw;
+    font-size: 8rem;
+}
+
+.checkbox {
+  margin-left: 8vw;
+}
+
+.containers {
+  height: 100%;
+}
+
+table {
+  width: 50vw !important;
+  margin-left: 35vw;
+  margin-top: 5vw;
+}
+
+@media (max-width: 1024px) {
+ 
+form {
+  margin-left: 23rem !important;
+}
+
+.logoBanCaribe {
+    margin-left: 45vw;
+    width: 25rem;
+}
+
+.tituloBanCaribe {
+    margin-left: 20vw;
+    font-size: 7rem;
+}
+}
+
+@media (max-width: 991px) {
+form {
+  margin-left: 18rem !important;
+}
+
+table {
+  margin-left: 29vw;
+}
+
+.logoBanCaribe {
+    margin-left: 30vw;
+    width: 30rem;
+}
+
+.tituloBanCaribe {
+    margin-left: 8vw;
+    font-size: 8rem;
+}
+}
+
+@media (max-width: 768px) {
+form {
+  margin-left: 12rem !important;
+}
+
+table {
+  width: 70vw !important;
+  margin-left: 15vw;
+}
+
+.logoBanCaribe {
+    margin-left: 30vw;
+    width: 25rem;
+}
+
+.tituloBanCaribe {
+    margin-left: 6vw;
+    font-size: 6rem;
+}
+}
+
+@media (max-width: 600px) {
+form {
+  width: 70vw;
+  margin-left: 5rem !important;
+}
+
+label {
+  width: 50vw;
+}
+
+input {
+  width: 50vw;
+}
+
+.logoBanCaribe {
+    margin-left: 25vw;
+    width: 25rem;
+}
+
+.tituloBanCaribe {
+    margin-left: 4vw;
+    font-size: 6rem;
+}
+}
+
+@media (max-width: 475px) {
+.logoBanCaribe {
+    width: 20rem;
+}
+
+.tituloBanCaribe {
+    font-size: 4rem;
+}
+}
+
+
+@media (max-width: 375px) {
+form {
+  width: 90vw;
+  margin-left: 1rem !important;
+}
+
+label {
+  width: 80vw;
+}
+
+input {
+  width: 75vw;
+}
+
+table {
+  margin-left: 1vw;
+}
+
+.logoBanCaribe {
+    width: 15rem;
+}
+
+.tituloBanCaribe {
+    font-size: 3rem;
+}
+}

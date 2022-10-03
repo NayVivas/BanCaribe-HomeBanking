@@ -1,0 +1,146 @@
+.seccion-resumen {
+    margin-top: 1vw;
+    margin-left: 0vw;
+    margin-bottom: 1rem;
+}
+
+.seccion-cards {
+    margin-left: 15vw;
+}
+
+
+.resumen-main {
+    width: 60vw;
+}
+
+.container-loans {
+    display: flex;
+    margin-left: 15vw;
+    margin-top: -16.8vw;
+}
+
+.resumen-main-card {
+    padding: .5rem;
+    box-shadow: rgba(0, 38, 255, 0.5) 0px 10px 36px 0px, rgba(6, 188, 193, 0.06) 0px 0px 0px 1px;
+    background-color: white;
+    width: 21vw;
+    height: 35vw;
+}
+
+.container-resumen {
+    display: flex;
+}
+
+.container-card {
+    height: 30vw;
+    margin-top: 1rem;
+}
+
+.card-card { 
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-bottom: 0.2rem;
+    height: 8rem;
+    width: 18rem;
+}
+
+@media (max-width: 1024px) {
+ .card-card { 
+    height: 10rem;
+    width: 18rem;
+}
+
+.container-card {
+    height: 34vw;
+}
+
+.resumen-main-card {
+    width: 21vw;
+    height: 40vw;
+}
+}
+
+@media (max-width: 991px) {
+.seccion-cards {
+    margin-left: 8vw;
+}
+
+.container-loans {
+    margin-left: 8vw;
+}
+}
+
+@media (max-width: 768px) {
+.seccion-cards {
+    margin-left: 8vw;
+}
+
+.resumen-main {
+    width: 40vw;
+} 
+
+.resumen-main-card {
+    width: 40vw;
+    height: 80vw;
+}
+
+.container-card {
+    height: 72vw;
+}
+
+.container-resumen {
+    margin-bottom: 2rem;
+}
+}
+
+@media (max-width: 475px) {
+.container-resumen {
+    flex-direction: column;
+}
+
+.resumen-main-card {
+    width: 70vw;
+    height: 120vw;
+}
+
+.container-card {
+    height: 108vw;
+}
+
+.seccion-cards {
+    margin-left: 0vw;
+}
+
+.resumen-main {
+    width: 70vw;
+} 
+
+.container-loans {
+    margin-left: 13.3vw;
+    position: relative;
+    top: 25vw;
+}
+}
+
+@media (max-width: 425px) {
+.resumen-main-card {
+    width: 70vw;
+    height: 135vw;
+}
+
+.container-card {
+    height: 120vw;
+}
+}
+
+@media (max-width: 375px) {
+.resumen-main-card {
+    width: 70vw;
+    height: 155vw;
+}
+
+.container-card {
+    height: 140vw;
+}
+}

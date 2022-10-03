@@ -1,0 +1,134 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.seccion-resumen-transfer {
+    margin-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.resumen-main-body {
+    margin-left: 5%;
+    transition: .5s;
+}
+
+.resumen-main-body:hover {
+    transform: scale(0.9);
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardIcono-transfer {
+    width: 6vw;
+    height: 6vw !important;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background: linear-gradient(#002D69, #002D69);
+    border-radius: 1rem;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-two {
+    display: none;
+}
+
+.container-three {
+    display: none;
+}
+
+.containerForm {
+    position: absolute;
+    top: 10vw;
+    right: 20vw;
+    width: 50vw;
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    box-shadow: rgba(0, 38, 255, 0.5) 0px 10px 36px 0px, rgba(6, 188, 193, 0.06) 0px 0px 0px 1px;
+}
+
+button {
+    border: none;
+}
+
+.btn-primary {
+   background-image: linear-gradient(-45deg, #002D69 0%, #002D69 100%) !important;
+   border: none !important;
+   display: flex;
+   justify-content: center;
+}
+
+.card {
+    width: 16rem !important;
+}
+
+.imgTransfer {
+    width: 4rem;
+}
+
+@media (max-width: 991px) {
+.seccion-resumen-transfer {
+    margin-left: 0vw;
+}
+}
+
+@media (max-width: 768px) {
+.containerForm {
+    top: 20vw;
+}
+}
+
+@media (max-width: 600px) {
+.container-box {
+    flex-direction: column;
+}
+
+.resumen-main-body {
+    margin-left: 0;
+    margin-top: 5%;
+}
+
+.containerForm {
+     width: 80vw;
+     padding: 1rem;
+     right: 7vw;
+}
+}
+
+@media (max-width: 475px) {
+
+}

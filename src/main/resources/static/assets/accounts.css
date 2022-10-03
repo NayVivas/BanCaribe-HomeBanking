@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+/* MAIN */
+.seccion-resumen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    margin-left: 12vw;
+    margin-bottom: 1rem;
+}
+
+.resumen-main {
+    padding: .5rem;
+    box-shadow: rgba(0, 38, 255, 0.5) 0px 10px 36px 0px, rgba(6, 188, 193, 0.06) 0px 0px 0px 1px;
+    background-color: white;
+    width: 70vw;
+}
+
+.resumen-main h3 {
+    margin: 0;
+    padding: .5rem
+}
+.resumen-main-body {
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+
+}
+.resumen-info {
+    padding: 1.5rem;
+    height: auto;
+    display: flex;
+    margin: 0;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.card {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    border-radius: 5%;
+    padding: 1rem;
+    margin-left: 1rem;
+}
+
+.cardIcono {
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    display: flex;
+    justify-content: center;
+    width: 8rem;
+    background-color: #06bcc1;
+    border-radius: 50%;
+}
+
+.btn-solicitar {
+  background-color: #14eaec;
+  margin: 0.5rem;
+  padding: 0.5rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+}
+
+.btn-solicitar:hover {
+  background-color: #0C59C2;
+  color: white;
+}
+
+.container-buttons {
+    margin-left: 10vw;
+}
+
+@media (max-width: 991px) { 
+.seccion-resumen {
+    margin-left: 0vw;
+}
+
+.resumen-main {
+    width: 95vw;
+}
+
+.card {
+    margin-left: 0.5rem;
+}
+}
+
+@media (max-width: 768px) { 
+.card {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}
+}
+
+@media (max-width: 600px) { 
+.resumen-main {
+    width: 80vw;
+    height: auto;
+}
+
+.card {
+    margin-left: 5rem !important;
+    margin-bottom: 2rem !important;
+}
+}
+
+@media (max-width: 475px) { 
+.card {
+    margin-left: 2rem !important;
+    margin-bottom: 2rem !important;
+}
+}
+
+@media (max-width: 425px) { 
+.card {
+    margin-left: 0.5rem !important;
+    margin-bottom: 2rem !important;
+}
+}
+

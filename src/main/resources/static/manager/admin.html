@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BanCaribe - accounts</title>
+    <link rel="shortcut icon" type="image/png" href="/img/logo.png">
+    <link rel="stylesheet" href="/assets/menu.css">
+    <link rel="stylesheet" href="/manager/loanAdmin.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="app" v-cloak>
+        <nav class="navbar-expand-lg">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <div class="navbar-brand d-flex align-items-center justify-content-center">
+                        <img src="/img/logo.png" alt="Logo" width="50" height="44"
+                            class="d-inline-block align-text-top">
+                        <h2>BanCaribe</h2>
+                    </div>
+                </div>
+                <div class="navbar-collapse nav-bar" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Mi Perfil
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><img src="/img/3d-render-people-profile-icon-2231691.png" alt="" class="img-perfil">
+                                </li>
+                                <li><a class="dropdown-item">{{clients.firstName + " " + clients.lastName}}</a></li>
+                                <li><a class="dropdown-item" href="#">Editar información</a></li>
+                                <li>
+                                    <a class="dropdown-item" href="#" @click="logout">Cerrar sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="navbar navbar-expand-lg bg-transparent">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <div class="anchor">
+                        <div class="menu">
+                            <li class="menu">
+                                <a href="/manager/admin.html" class="btn">
+                                    Inicio
+                                </a>
+                                <a href="/manager/manager.html" class="btn">
+                                    Clientes
+                                </a>
+                                <a href="/manager/loanAdmin.html" class="btn">
+                                    Prestamos
+                                </a>
+                            </li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+        <section>
+            <img src="/img/logo.png" alt="logoBanCaribe" class="logoBanCaribe">
+            <h1 class="tituloBanCaribe">BANCARIBE</h1>
+        </section>
+
+
+
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/vue@3"></script>
+ <script src="/manager/loanAdmin.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+</body>
+</html>

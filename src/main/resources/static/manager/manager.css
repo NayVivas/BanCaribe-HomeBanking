@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+.btn {
+    background: rgb(6, 188, 193) !important;
+    font-weight: 600 !important;
+}
+
+.form-control {
+    border: 1px solid rgb(6, 188, 193)  !important;
+}
+
+h1 {
+    background: rgb(6, 188, 193) !important;
+}
+
+.btn-solicitar {
+  background-color: #14eaec;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+  border: none;
+}
+
+.btn-solicitar:hover {
+  background-color: #0C59C2;
+  color: white;
+}

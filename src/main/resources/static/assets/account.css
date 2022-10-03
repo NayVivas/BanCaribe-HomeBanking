@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+.container-table {
+    width: 70vw;
+    margin-left: 20vw;
+    margin-top: 2vw;
+}
+
+.container-account {
+    margin-top: 1vw;
+    margin-left: 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

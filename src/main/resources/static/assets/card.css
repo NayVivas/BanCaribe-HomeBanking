@@ -1,0 +1,474 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+[v-cloak]{
+    display: none;
+}
+
+
+body,
+input {
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-btn {
+  width: 100px;
+  background-color: #20dbc2;
+  border: none;
+  outline: none;
+  height: 49px;
+  border-radius: 49px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin: 10px 0;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 1rem;
+}
+
+.btn-btn:hover {
+  background-color: #0C59C2;
+}
+
+.section-Allcards{
+  margin-left: 30% !important;
+  margin-top: 20%;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	transform: rotateY(0deg);
+}
+
+.content-card {
+  display: flex;
+}
+
+.wrap {
+  border: none;
+}
+
+.tarjeta{
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -2vw;
+    border-radius: 20px;
+	position: relative;
+	transform-style: preserve-3d;
+	transition: 1s ease;
+	box-shadow: 0px 10px 15px -5px rgba(0,0,0,0.65);
+    height: 10rem;
+    width: 18rem;
+    border: none;
+    margin-bottom: 2% !important;
+}
+
+.tarjetaNone {
+  background-color: #fff !important;
+  border: 1px dashed black;
+}
+
+.tarjetaGold {
+  background-image: url(/img/BanCaribeCard2.png);
+}
+
+.tarjetaTitanium {
+background-image: url(/img/BanCaribeCard1.png);
+
+}
+
+.tarjetaSilver {
+background-image: url(/img/BanCaribeCard3.png);
+}
+
+.td1 {
+  background-image: url(/img/TD1.png);
+  background-position: -2rem -1rem !important;
+}
+
+.td2 {
+  background-image: url(/img/TD2.jpg);
+  background-position: 10% 10% !important;
+}
+
+.td3 {
+  background-image: url(/img/TD3.png);
+  background-position: 10% 10% !important;
+}
+
+.buttonCard {
+  padding: 3%!important;
+  border-radius: 2rem;
+  border: 1px dotted black;
+}
+
+.adelante, .atras{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	backface-visibility: hidden;
+  border: none;
+}
+
+.adelante{
+	width: 100%;
+}
+
+.atras{
+	transform: rotateY(180deg);
+	padding: 15px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	color: #fff;
+	font-family: "open sans";
+    background-repeat: no-repeat;
+    background-size: 120%;
+    background-position: -5vw;
+    border-radius: 20px;
+}
+
+.tarjeta-wrap:hover .tarjeta{
+	transform: rotateY(180deg);
+}
+
+.titleC {
+  font-family: Signika;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  top: 0.4rem !important;
+  left: -0.1rem !important;
+}
+
+.titleTD1 {
+  font-family: Signika;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  top: 0rem !important;
+  left: 8rem !important;
+}
+
+.titleTD2 {
+  font-family: Signika;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  top: 0rem !important;
+  left: 3.8rem !important;
+}
+
+.titleTD3 {
+  font-family: Signika;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 400;
+  position: relative;
+  top: 0rem !important;
+  left: -0.1rem !important;
+}
+
+.cardImgC {
+  width: 3.5rem !important;
+  position: relative;
+  left: 1rem !important;
+  top: 0.7rem !important;
+}
+
+.cardImgTD1 {
+  width: 3rem !important;
+  position: relative;
+  left: 9.2rem !important;
+  top: 0.2rem !important;
+}
+
+.cardImgTD2 {
+  width: 3rem !important;
+  position: relative;
+  left: 5rem !important;
+  top: 0.2rem !important;
+}
+
+.cardImgTD3 {
+  width: 3rem !important;
+  position: relative;
+  left: 1rem !important;
+  top: 0.3rem !important;
+}
+
+img.chip {
+  margin-top: 20%;
+  margin-left: 3rem;
+  width: 2.5rem !important;
+  height: 2rem !important;
+}
+
+.containerC {
+  margin-left: 30% !important;
+  margin-top: 1%;
+}
+
+.container-textD {
+  position: relative;
+  top:-3rem;
+  left: 4rem;
+}
+
+.container-numberD {
+    width: 20rem !important;
+    position: relative;
+    top:-3rem;
+    right: 2rem;
+}
+
+.containerHolo {
+  position: relative;
+  top:3rem;
+  left: 6.5rem;
+}
+
+.holoName {
+  font-size: 1.2rem ;
+}
+
+.InfPersonal {
+    margin-top: 0.5rem;
+    margin-left: 10rem !important;
+    display: flex;
+    flex-direction: column;
+}
+
+.gold {
+  margin-top: 5%;
+  margin-right: 10% !important;
+  opacity: 0.5;
+  font-size: 1.5rem !important;
+}
+
+.titanium {
+  margin-top: 15% !important;
+  margin-left: 11% !important;
+  letter-spacing: 0.5rem !important;
+  font-size: 1.5rem !important;
+}
+
+.silver {
+    margin-left: 19% !important;
+    opacity: 0.5;
+}
+
+.numberDedito {
+  font-family: Share Tech Mono;
+  color: black;
+  margin-left: 10%;
+}
+
+.emboss {
+  font-family: Share Tech Mono;
+  color: black;
+  text-shadow: -2px -2px 2px rgba(255,255,255,1),
+                1px 1px 1px rgba(0,0,0,0.9);
+  -webkit-text-stroke:2px rgba(0,0,0,0.4);
+}
+
+
+.numberSilver {
+  color: black;
+}
+
+.name {
+  font-size: 1rem;
+  padding-left: 10%;
+  text-shadow: -2px -1px 1px rgba(255,255,255,1),
+                1px 1px 1px rgba(0,0,0,1),
+                -1px 1px 1px rgba(0,0,0,1);
+  display: inline-block;
+  padding-bottom: 5%;
+  letter-spacing: 1px;
+}
+
+.nameDebito {
+    font-size: 0.1rem;
+  padding-left: 10%;
+}
+
+.small-type {
+  font-size: 1rem !important;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: white;
+  line-height: 10px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.small-typeDebito {
+  font-size: 0.5rem !important;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  color: black;
+  line-height: 10px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+.exp {
+    font-size: 1rem;
+  padding-left: 10%;
+  text-shadow: -2px -1px 1px rgba(255,255,255,1),
+                1px 1px 1px rgba(0,0,0,1),
+                -1px 1px 1px rgba(0,0,0,1);
+                letter-spacing: 1px;
+}
+
+.goldLetters {
+  margin-top: 0%;
+  font-size: 1.5rem;
+}
+
+.numbergold {
+  font-size: 1.5rem;
+  margin-top: 0%;
+  margin-left: 20%;
+}
+
+.barra {
+  width: 100%;
+  height: 3rem;
+  background: grey;
+  opacity: 0.5;
+}
+
+.cvv {
+  position:absolute;
+  top:5rem;
+  left: 80%;
+  font-size: 1rem;
+  letter-spacing: 0.5rem;
+}
+
+.embossGold {
+  font-family: Share Tech Mono;
+  color: black;
+}
+
+.number {
+    font-size: 1.3rem !important;
+    position: relative;
+    left: 25%;
+}
+
+.pushCvv1 {
+  display: none;
+}
+
+.pushCvv2 {
+  display: none;
+}
+
+.tituloCards {
+  margin-left: 30%;
+  margin-top: -8%;
+}
+
+.btn-solicitar {
+  background-color: #14eaec;
+  margin: 1rem;
+  padding: 1rem;
+  text-decoration: none;
+  border-radius: 1rem;
+  color: black;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.btn-solicitar:hover {
+  background-color: #0C59C2;
+  color: white;
+}
+
+.vencimiento {
+  color: #ec1414;
+  font-weight: 600;
+}
+
+.resumen-main {
+  width: 35vw;
+}
+
+.seccion-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    margin-left: 5vw;
+    margin-bottom: 1rem;
+}
+
+.seccion-resumen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vw;
+    margin-left: 20vw;
+    margin-bottom: 1rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 991px) {
+ .seccion-resumen {
+    margin-left: 10vw;
+}
+}
+
+@media (max-width: 768px) {
+ .seccion-resumen {
+    margin-left: 3vw;
+}
+
+.resumen-main {
+    width: 43vw;
+    height: auto;
+}
+}
+
+@media (max-width: 600px) {
+.container-create-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.resumen-main {
+    width: 60vw;
+}
+}
+
+@media (max-width: 475px) {
+.resumen-main {
+    width: 80vw;
+}
+}
+
+@media (max-width: 375px) {
+.resumen-main {
+    width: 90vw;
+}
+}
